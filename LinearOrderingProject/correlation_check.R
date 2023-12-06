@@ -14,9 +14,9 @@ data <- select(data, -c("Wojewodztwo","ludnosc..tys.osob.","szpitale..liczba.",
                         "organizacje.non.profit.ratownictwo....",
                         "przystanki.komunikacji.miejskiej..liczba.",
                         "zgony.niemowlat.na.tys.urodzen.zywych..liczba.tys.urodzen.zywych."))
-names <- colnames(data)
-print(names)
-colnames(data) <- c(1:length(data))
+#names <- colnames(data)
+#print(names)
+#colnames(data) <- c(1:length(data))
 cor <- cor(data)
 
 means <- c()
